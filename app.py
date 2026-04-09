@@ -1,5 +1,13 @@
-def add(a, b):
-return a + b
+import logging
+# Configure logging
+logging.basicConfig(level=logging.INFO)
 
-if __name__ == &quot;__main__&quot;:
-print(add(2, 3))
+def add(a, b):
+    logging.info("Addition operation performed")
+    return a + b
+
+
+# Example usage
+if __name__ == "__main__":
+    result = add(2, 3)
+    print(result)
